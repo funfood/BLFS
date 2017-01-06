@@ -8,7 +8,8 @@ while true; do
         make &&
         make install &&
         gtk-update-icon-cache -t -f --include-image-data /usr/share/icons/hicolor &&
-        update-desktop-database ;
+        update-desktop-database &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

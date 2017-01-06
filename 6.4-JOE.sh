@@ -13,7 +13,8 @@ while true; do
         install -vm 755 joe/util/{stringify,termidx,uniproc} /usr/bin &&
 
         install -vdm755 /usr/share/joe/util &&
-        install -vm 644 joe/util/{*.txt,README} /usr/share/joe/util;
+        install -vm 644 joe/util/{*.txt,README} /usr/share/joe/util &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

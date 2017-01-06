@@ -21,7 +21,8 @@ while true; do
 
         find /usr/share/doc/python-2.7.12 -type d -exec chmod 0755 {} \; &&
         find /usr/share/doc/python-2.7.12 -type f -exec chmod 0644 {} \; &&
-        export PYTHONDOCS=/usr/share/doc/python-2.7.12 ;
+        export PYTHONDOCS=/usr/share/doc/python-2.7.12 &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

@@ -6,7 +6,8 @@ while true; do
         cd ed-1.13.tar &&
         ./configure --prefix=/usr --bindir=/bin &&
         make &&
-        make install ;
+        make install &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

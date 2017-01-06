@@ -15,7 +15,8 @@ while true; do
         install -v -m644    doc/html/* \
                             /usr/share/doc/parted-3.2/html &&
         install -v -m644    doc/{FAT,API,parted.{txt,html}} \
-                            /usr/share/doc/parted-3.2;
+                            /usr/share/doc/parted-3.2 &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

@@ -10,7 +10,8 @@ while true; do
         make install &&
         chown -v -R root:root /usr/share/emacs/25.1 &&
         gtk-update-icon-cache -t -f --include-image-data /usr/share/icons/hicolor &&
-        update-desktop-database; 
+        update-desktop-database &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

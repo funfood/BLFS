@@ -13,7 +13,8 @@ while true; do
             --with-passprompt="[sudo] password for %p" &&
         make &&
         make install &&
-        ln -sfv libsudo_util.so.0.0.0 /usr/lib/sudo/libsudo_util.so.0;
+        ln -sfv libsudo_util.so.0.0.0 /usr/lib/sudo/libsudo_util.so.0 &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

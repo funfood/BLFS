@@ -11,7 +11,8 @@ while true; do
         make &&
         make install &&
         install -v -m644 doc/nanorc.sample /etc &&
-        install -v -m644 doc/texinfo/nano.html /usr/share/doc/nano-2.6.3 ; 
+        install -v -m644 doc/texinfo/nano.html /usr/share/doc/nano-2.6.3 &&
+        cd ..; 
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

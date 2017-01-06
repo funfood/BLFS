@@ -18,7 +18,8 @@ while true; do
         make -C tools install_dmsetup_dynamic &&
         make -C udev  install                 &&
         make -C libdm install &&
-        make install;
+        make install &&
+        cd ..;
          break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
