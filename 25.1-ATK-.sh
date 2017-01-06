@@ -6,7 +6,8 @@ while true; do
         cd atk-2.20.0 &&
         ./configure --prefix=/usr &&
         make &&
-        make install ;
+        make install &&
+        cd ..;
         break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;

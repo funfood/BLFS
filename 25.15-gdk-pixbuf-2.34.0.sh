@@ -7,7 +7,8 @@ while true; do
         sed -i "/seems to be moved/s/^/#/" ltmain.sh &&
         ./configure --prefix=/usr --with-x11 &&
         make &&
-        make install ;
+        make install && 
+        cd ..;
          break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
