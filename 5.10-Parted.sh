@@ -2,7 +2,7 @@ while true; do
     read -p "Do you wish to install this program?" yn
     case $yn in
         [Yy]* ) wget "http://ftp.gnu.org/gnu/parted/parted-3.2.tar.xz";
-        tar xf parted-3.2 &&
+        tar xf parted-3.2.tar.xz &&
         cd parted-3.2 &&
         ./configure --prefix=/usr --disable-static &&
         make &&
