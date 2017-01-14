@@ -1,11 +1,12 @@
 while true; do
     read -p "Do you wish to install this program?" yn
     case $yn in
-        [Yy]* ) wget "ftp://ftp.gnutls.org/gcrypt/gnutls/v3.5/gnutls-3.5.8.tar.xz" &&
-        tar xf gnutls-3.5.8.tar.xz &&
-        cd gnutls-3.5.8 &&
+        [Yy]* ) #somhow obtain ftp://ftp.gnutls.org/gcrypt/gnutls/v3.5/gnutls-3.5.8.tar.xz
+        tar xf ../gnutls-3.5.8.tar.xz &&
+        cd ../gnutls-3.5.8 &&
         ./configure --prefix=/usr \
-            --with-default-trust-store-file=/etc/ssl/ca-bundle.crt &&
+            --with-default-trust-store-file=/etc/ssl/ca-bundle.crt \
+            --with-included-libtasn1 &&
         make &&
         make install &&
         cd ..;

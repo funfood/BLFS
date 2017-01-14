@@ -1,9 +1,9 @@
 while true; do
     read -p "Do you wish to install this program?" yn
     case $yn in
-        [Yy]* ) wget " https://ftp.gnu.org/gnu/nettle/nettle-3.3.tar.gz" &&
-        tar xf nettle-3.3.tar.gz &&
-        cd nettle-3.3 &&
+        [Yy]* )  # somhow optain https://ftp.gnu.org/gnu/nettle/nettle-3.3.tar.gz
+        tar xf ../nettle-3.3.tar.gz &&
+        cd ../nettle-3.3 &&
         ./configure --prefix=/usr --disable-static &&
         make &&
         make install &&
