@@ -8,7 +8,8 @@ while true; do
         ./configure --prefix=/usr \
             --with-default-trust-store-file=/etc/ssl/ca-bundle.crt \
             --with-included-libtasn1 \
-            --with-included-unistring &&
+            --with-included-unistring \
+            --without-p11-kit &&
         make &&
         make install &&
         cd ..;
