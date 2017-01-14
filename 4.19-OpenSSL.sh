@@ -1,7 +1,7 @@
 while true; do
-    read -p "Do you wish to install this program?" yn
+    read -p "Do you wish to install this program? IMPORTANT:: this program requires the '--no-check-certificate' this will be less sicure!" yn
     case $yn in
-        [Yy]* ) wget "https://openssl.org/source/openssl-1.0.2h.tar.gz" &&
+        [Yy]* ) wget "https://openssl.org/source/openssl-1.0.2h.tar.gz" --no-check-certificate &&
         tar xf openssl-1.0.2h.tar.gz &&
         cd openssl-1.0.2h &&
         ./config --prefix=/usr         \
