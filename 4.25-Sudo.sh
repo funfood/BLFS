@@ -2,7 +2,7 @@ while true; do
     read -p "Do you wish to install this program?" yn
     case $yn in
         [Yy]* ) wget "http://www.sudo.ws/dist/sudo-1.8.17p1.tar.gz" &&
-        tar xf sudo-1.8.17p1 &&
+        tar xf sudo-1.8.17p1.tar.gz &&
         cd sudo-1.8.17p1 &&
         ./configure --prefix=/usr              \
             --libexecdir=/usr/lib      \
