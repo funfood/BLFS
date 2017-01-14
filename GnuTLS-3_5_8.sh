@@ -7,6 +7,7 @@ while true; do
         cd gnutls-3.5.8 &&
         ./configure --prefix=/usr \
             --with-default-trust-store-file=/etc/ssl/ca-bundle.crt \
+            # the reason that we are doing it without any of the dependancys are because wget is not installed (obviosly) so it is mroe trouble than it is worth.
             --with-included-libtasn1 \
             --with-included-unistring \
             --without-p11-kit &&
