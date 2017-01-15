@@ -2,7 +2,7 @@ while true; do
     read -p "Do you wish to install this program?" yn
     case $yn in
         [Yy]* ) wget " https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz" &&
-        tar xf Python-2.7.12 &&
+        tar xf Python-2.7.12.tar.xz &&
         cd Python-2.7.12 &&
         ./configure --prefix=/usr       \
             --enable-shared     \
