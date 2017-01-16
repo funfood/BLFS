@@ -21,3 +21,4 @@ echo "\n1)     xcb-proto"
 echo "\n1)     libxcb" #start with next on sunday, start with xorg librarys ps. have fun (its a short one) :)
 echo "\n1)     xorg librarys"
 echo "\n1)     dbus"
+echo "\n1)     at-spi2-core"
