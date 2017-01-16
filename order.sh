@@ -19,5 +19,5 @@ echo "\n1)     Xorg Protocol Headers"
 echo "\n1)     libXau"
 echo "\n1)     xcb-proto"
 echo "\n1)     libxcb" #start with next on sunday, start with xorg librarys ps. have fun (its a short one) :)
-echo "\n1)     4.19openSSL"
-echo "\n1)     4.19openSSL"
+echo "\n1)     xorg librarys"
+echo "\n1)     dbus"
