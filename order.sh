@@ -34,7 +34,7 @@ echo "\n30)     Mesa"
 echo "\n31)     libepoxy"
 echo "\n32)     Pango"
 echo "\n33)     GTK3"
-echo "\n34)     "
+echo "\n34)     bluefish-2" #finaly ikr! also tbc later -- wednsday?
 echo "\n35)     "
 echo "\n36)     "
 echo "\n37)     "
