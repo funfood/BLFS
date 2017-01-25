@@ -10,6 +10,7 @@ echo "\n5)     5.5-LVM2"
 echo "\n6)     5.10-parted" # ZOTE::: start with next nextime
 echo "\n7)     libffi"
 echo "\n8)     python2"
+echo "libpcre"
 echo "\n9)     GLib"
 echo "\n10)     freetype-2"
 echo "\n11)     fontconfig-2"
